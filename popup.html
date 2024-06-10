@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="input-container drop-holder">
+    <input type="email" id="recipient" placeholder="To: " autocomplete="off">
+    <div id="dropdown" class="dropdown"></div>
+  </div>
+  <div class="input-container">
+    <input type="text" id="subject" placeholder="Subject: ">
+  </div>
+  <div class="input-container drop-holder">
+    <input type="text" id="body" placeholder="Enter Message...">
+    <div id="templateDropdown" class="dropdown"></div>
+  </div>
+
+  
+  <button id="composeEmail">Compose Email</button>
+  <script src="popup.js"></script>
+</body>
+
+</html>

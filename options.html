@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail Auto Composer Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <section class="contacts-section">
+      <h2>Contacts</h2>
+      <ul id="contactsList"></ul>
+      <button id="addContactButton">Add Contact</button>
+    </section>
+    <section class="templates-section">
+      <h2>Templates</h2>
+      <ul id="templatesList"></ul>
+      <button id="addTemplateButton">Add Template</button>
+    </section>
+  </div>
+
+  <div id="editContactModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Edit Contact</h2>
+      <label for="contactEmail">Email:</label>
+      <input type="email" id="contactEmail">
+      <label for="contactName">Name:</label>
+      <input type="text" id="contactName">
+      <label for="contactImageUpload">Upload Image:</label>
+      <input type="file" id="contactImageUpload">
+      <label for="contactImageUrl">Or Image URL:</label>
+      <input type="url" id="contactImageUrl">
+      <button id="saveContact">Save</button>
+    </div>
+  </div>
+
+  <div id="editTemplateModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Edit Template</h2>
+      <label for="templateName">Template Name:</label>
+      <input type="text" id="templateName">
+      <label for="templateText">Template Text:</label>
+      <textarea id="templateText"></textarea>
+      <button id="saveTemplate">Save</button>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
