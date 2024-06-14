@@ -1,4 +1,7 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
@@ -16,7 +19,8 @@ body {
   align-items: center;
   justify-content: space-evenly;
   padding: 3%;
-  background: rgb(28, 27, 27);
+  background: black;
+  font-family: "Montserrat", sans-serif;
 }
 
 .input-container {
@@ -39,9 +43,9 @@ input {
   z-index: 999;
 }
 
-input:focus{  
+input:focus {
   outline: none;
-  border-bottom: 2px solid rgb(46, 183, 237);
+  border-bottom: 3px solid #faa072;
 }
 
 button {
@@ -52,21 +56,15 @@ button {
   border-radius: 35px;
 }
 
-button:hover{
-  transform: scale(1.05, 1.05);
-  transition: 0.5s;
-  border: 2px solid rgb(46, 183, 237)
-}
-
-.drop-holder{
+.drop-holder {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-.dropdown {  
-  width: 100%;  
+.dropdown {
+  width: 100%;
   height: 90%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -75,8 +73,8 @@ button:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
-  display: none; 
+  justify-content: flex-start;
+  display: none;
 }
 
 .dropdown-item {
@@ -91,13 +89,13 @@ button:hover{
   align-items: flex-start;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
   transform: scale(1.04, 1.05);
   transition: 1s;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #feb692;
 }
 
-.dropdown-item-img{
+.dropdown-item-img {
   width: 5%;
   height: 100%;
   margin-right: 10px;
@@ -106,7 +104,7 @@ button:hover{
   justify-content: center;
 }
 
-.dropdown-item-img img{
+.dropdown-item-img img {
   width: 100%;
   aspect-ratio: 1/1;
   display: flex;
@@ -114,11 +112,44 @@ button:hover{
   justify-content: center;
 }
 
-.dropdown-item span{
+.dropdown-item span {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   color: white;
+  font-weight: bolder;
+}
+
+.btn {
+  transition: all 0.3s ease-in-out;
+  font-family: "Dosis", sans-serif;
+}
+
+.btn {
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+  box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+a {
+  background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
